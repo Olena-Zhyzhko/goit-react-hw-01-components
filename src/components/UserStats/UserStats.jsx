@@ -18,7 +18,7 @@ export const UserStats = ({ followers, views, likes}) => {
 }
 
 UserStats.propTypes = {
-    stats: PropTypes.shape({
+    stats: PropTypes.exact({
         followers: PropTypes.number.isRequired,
         views: PropTypes.number.isRequired,
         likes: PropTypes.number.isRequired,
